@@ -31,13 +31,17 @@
         display: inline;
         margin: 0 0 0 0.4em;
     }
+
+    h3{
+        display: inline;
+    }
 </style>
 
 <div class="Skills">
     <h2>Habilidades</h2>
     <ul>
         {#each skills as {name}, i }        
-            <li>{name}</li>
+            <li><h3>{name}</h3></li>
         {/each}
     </ul>
     

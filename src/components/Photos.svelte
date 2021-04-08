@@ -5,7 +5,7 @@
 
     onMount(async () => {
         console.log('onmount');
-        const response = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=20');
+        const response = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=10');
         photos = await response.json();
     });
 </script>

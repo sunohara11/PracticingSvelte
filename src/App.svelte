@@ -5,6 +5,8 @@
 	import Skills from "./components/Skills.svelte";
 	import Input from "./components/Input.svelte";
 	import Photos from "./components/Photos.svelte";
+	import ButtonCount from "./components/ButtonCount.svelte";
+	
 	export let name;
 	export let lastName;
 
@@ -71,8 +73,11 @@
 
 	<Text anotherText="Prueba de props"/>
 	<Skills/>
-	
+	<Text anotherText="Prueba este input:"/>
 	<Input/>
+	<Text anotherText="Boton para practicar Stores con Svelte:"/>
+	<ButtonCount/>
+	<Text anotherText="Consumamamos una API con svelte :D"/>
 	<Photos/>
 	<img src={slogo} alt="svelte">
 </main>
