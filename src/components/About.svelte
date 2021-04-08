@@ -1,4 +1,6 @@
 <script>
+    import Button from './Buttons.svelte';
+
     let someText= `Front end developer`;
     let count= 0;
     let styles = {darkMode: false};
@@ -39,10 +41,22 @@
     <p>
         {someText}
     </p>
+
+    <Button text="Click"
+    {count}
+    on:click={handleClick}
+    />
     <button on:click={handleClick}>Click {count === 0 ? '' : count}</button>
     {#if count > 0}
     <button on:click={resetClic}>Reset</button>
     {/if}
     <button on:click={alertClic}>Alert</button>
+
+    <Button 
+        text={styles.darkMode ? 'Darkmode 🌒':'Light mode 🌞'}
+        on:click={toggle}
+    />
+        
+    
     <button on:click={toggle}>{styles.darkMode ? 'Darkmode 🌒':'Light mode 🌞'}</button>
 </div>
