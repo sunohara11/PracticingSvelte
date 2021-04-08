@@ -4,6 +4,7 @@
 	import Person from "./components/Person.svelte";
 	import Skills from "./components/Skills.svelte";
 	import Input from "./components/Input.svelte";
+	import Photos from "./components/Photos.svelte";
 	export let name;
 	export let lastName;
 
@@ -72,5 +73,6 @@
 	<Skills/>
 	
 	<Input/>
+	<Photos/>
 	<img src={slogo} alt="svelte">
 </main>
